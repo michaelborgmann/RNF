@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4C4605F31CB7F92B004FE46C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4605F21CB7F92B004FE46C /* main.m */; };
+		4C46060C1CB7F971004FE46C /* RNF_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C46060B1CB7F971004FE46C /* RNF_Tests.m */; };
+		4C4606161CB7FFBB004FE46C /* RomanNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4606151CB7FFBB004FE46C /* RomanNumber.m */; };
+		4C4606171CB8038E004FE46C /* RomanNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4606151CB7FFBB004FE46C /* RomanNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,22 @@
 /* Begin PBXFileReference section */
 		4C4605EF1CB7F92B004FE46C /* RNF */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RNF; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4605F21CB7F92B004FE46C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C4606091CB7F971004FE46C /* RNF Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNF Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C46060B1CB7F971004FE46C /* RNF_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNF_Tests.m; sourceTree = "<group>"; };
+		4C46060D1CB7F971004FE46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4606141CB7FFBB004FE46C /* RomanNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomanNumber.h; sourceTree = "<group>"; };
+		4C4606151CB7FFBB004FE46C /* RomanNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C4605EC1CB7F92B004FE46C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4606061CB7F971004FE46C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				4C4605F11CB7F92B004FE46C /* RNF */,
+				4C46060A1CB7F971004FE46C /* RNF Tests */,
 				4C4605F01CB7F92B004FE46C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				4C4605EF1CB7F92B004FE46C /* RNF */,
+				4C4606091CB7F971004FE46C /* RNF Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +75,19 @@
 			isa = PBXGroup;
 			children = (
 				4C4605F21CB7F92B004FE46C /* main.m */,
+				4C4606141CB7FFBB004FE46C /* RomanNumber.h */,
+				4C4606151CB7FFBB004FE46C /* RomanNumber.m */,
 			);
 			path = RNF;
+			sourceTree = "<group>";
+		};
+		4C46060A1CB7F971004FE46C /* RNF Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4C46060B1CB7F971004FE46C /* RNF_Tests.m */,
+				4C46060D1CB7F971004FE46C /* Info.plist */,
+			);
+			path = "RNF Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,16 +110,37 @@
 			productReference = 4C4605EF1CB7F92B004FE46C /* RNF */;
 			productType = "com.apple.product-type.tool";
 		};
+		4C4606081CB7F971004FE46C /* RNF Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C46060E1CB7F971004FE46C /* Build configuration list for PBXNativeTarget "RNF Tests" */;
+			buildPhases = (
+				4C4606051CB7F971004FE46C /* Sources */,
+				4C4606061CB7F971004FE46C /* Frameworks */,
+				4C4606071CB7F971004FE46C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNF Tests";
+			productName = "RNF Tests";
+			productReference = 4C4606091CB7F971004FE46C /* RNF Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4C4605E71CB7F92B004FE46C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Michael Borgmann";
 				TargetAttributes = {
 					4C4605EE1CB7F92B004FE46C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4C4606081CB7F971004FE46C = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -109,16 +158,37 @@
 			projectRoot = "";
 			targets = (
 				4C4605EE1CB7F92B004FE46C /* RNF */,
+				4C4606081CB7F971004FE46C /* RNF Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C4606071CB7F971004FE46C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C4605EB1CB7F92B004FE46C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4606161CB7FFBB004FE46C /* RomanNumber.m in Sources */,
 				4C4605F31CB7F92B004FE46C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4606051CB7F971004FE46C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4606171CB8038E004FE46C /* RomanNumber.m in Sources */,
+				4C46060C1CB7F971004FE46C /* RNF_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +290,28 @@
 			};
 			name = Release;
 		};
+		4C46060F1CB7F971004FE46C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "RNF Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelborgmann.RNF-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C4606101CB7F971004FE46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "RNF Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelborgmann.RNF-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -237,6 +329,14 @@
 			buildConfigurations = (
 				4C4605F71CB7F92B004FE46C /* Debug */,
 				4C4605F81CB7F92B004FE46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C46060E1CB7F971004FE46C /* Build configuration list for PBXNativeTarget "RNF Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C46060F1CB7F971004FE46C /* Debug */,
+				4C4606101CB7F971004FE46C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
